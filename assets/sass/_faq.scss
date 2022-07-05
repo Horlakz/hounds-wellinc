@@ -1,0 +1,68 @@
+
+.container-fluid {
+
+    h3 {
+        color: rgb(2, 76, 88);
+        position: relative;
+        width: 23rem;
+
+        // &::after {
+        //     content: "";
+        //     position: absolute;
+        //     bottom: 0;
+        //     right: 0.8rem;
+        //     width: 4.19rem;
+        //     height: 0.13rem;
+        //     background-color: rgb(2, 76, 88);
+        // }
+    }
+}
+
+.accordion {
+    width: 100%;
+    padding: 0.4rem 0.3125rem;
+    border: 2px solid #6db5ff;
+    cursor: pointer;
+    border-radius: 4rem;
+    display: flex;
+    margin: 0.625rem 0;
+    align-items: center;
+
+
+    .far {
+        margin: 0 0.625rem 0 0;
+        padding: 0.49rem 0.54rem;
+        width: 1.875rem;
+        height: 1.875rem;
+        background-color: rgb(38, 73, 78);
+        border-radius: 50%;
+        float: left;
+        transition: all 0.4s ease-in;
+    }
+
+    h4 {
+        font-size: 0.9em;
+        margin: 0;
+        padding: 0.2rem 0 0;
+    }
+}
+
+.panel {
+    padding: 0 15px;
+    border-left: 1px solid #6bd5ff;
+    margin-left: 1.4rem;
+    text-align: justify;
+    overflow: hidden;
+    max-height: 0;
+    transition: all .4s ease-in;
+}
+
+.active {
+    background-color: rgb(39, 68, 146);
+    color: rgb(224, 235, 247);
+
+    // i {
+        
+    // }
+}
+

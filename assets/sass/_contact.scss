@@ -1,0 +1,57 @@
+
+.header-h {
+    height: 400px;
+}
+
+.mid {
+    padding: $default-padding;
+}
+
+.location, .mail {
+    padding: 0;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    border-bottom: 1px solid $btn-blue;
+
+    // .sub-sub-topic {
+    //     display: flex;
+    //     flex-direction: column;
+    //     padding: $default-padding;
+    // }
+
+    i {
+        font-size: 2rem;
+        color: $btn-blue;
+    }
+}
+
+.form {
+    padding: $default-padding;
+    display: flex;
+    flex-direction: column;
+
+    &>label {
+        text-align: initial;
+        margin-bottom: 0;
+    }
+
+    input, textarea {
+        margin-top: 0;
+        height: 1.4rem;
+
+        &:active, &:focus {
+            outline: none;
+        }
+    }
+
+    textarea {
+        height: 4rem;
+    }
+
+    .btn {
+        height: 1.6rem;
+        background-color: $btn-blue;
+        padding: 0;
+        margin-top: 1rem;
+    }
+}

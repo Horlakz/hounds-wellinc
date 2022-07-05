@@ -1,0 +1,21 @@
+
+.about-page-h4 {
+    padding: 0.1rem;
+}
+
+
+.about-page-label {
+    font-weight: 300;
+}
+
+.progress-container {
+    display: inline-block;
+    width: 100%;
+
+    progress {
+        width: 85%;
+        border: none;
+        background-color: lighten($color: $btn-blue, $amount: 20%);
+        margin-right: 0.7em;
+    }
+}

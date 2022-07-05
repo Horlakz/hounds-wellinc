@@ -1,0 +1,333 @@
+
+
+.services {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke;
+
+    .far {
+        font-size: 3.5rem;
+        padding: 0.4em;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        padding: 0.5em;   
+    }
+
+    p {
+        padding: $default-padding;
+    }
+
+    .service-1 {
+        background:url(../images/service1.jpg);
+        height: 100%;
+        overflow: hidden;
+        padding: 1.4em;
+
+        
+        .color-1 {
+            position: relative;
+            top: -2rem;
+            left: -2rem;
+            background: rgba(54, 159, 230, 0.438);
+            overflow: hidden;
+            height: 140%;
+            width: 120%;
+            z-index: 2;
+            padding-top: 2rem;
+        }
+    }
+
+    .service-2 {
+        background:url(../images/service2.jpg);
+        height: 100%;
+        overflow: hidden;
+        padding: 1.4em;
+
+        
+        .color-2 {
+            position: relative;
+            top: -2rem;
+            left: -2rem;
+            background: rgba(62, 80, 139, 0.44);
+            overflow: hidden;
+            height: 140%;
+            width: 120%;
+            z-index: 2;
+            padding-top: 2rem;
+        }
+    }
+
+    .service-3 {
+        background:url(../images/service3.jpg);
+        height: 100%;
+        overflow: hidden;
+        padding: 1.4em;
+
+        
+        .color-3 {
+            position: relative;
+            top: -2rem;
+            left: -2rem;
+            background: rgba(31, 21, 175, 0.514);
+            overflow: hidden;
+            height: 140%;
+            width: 120%;
+            z-index: 2;
+            padding-top: 2rem;
+        }
+    }
+}
+
+.about {
+    background-color: rgb(243, 247, 252);
+    text-align: center;
+    padding: 1.3rem;
+
+    h3 {
+        padding: 1em;
+        font-size: 1.7rem;
+    }
+}
+
+.crypto-chart {
+    display: none;
+}
+
+.calculator {
+    padding: 1rem;
+
+     h4 {
+        text-align: center;
+        font-size: 1.3rem;
+     }
+
+     #calculator {
+       
+       
+        &>div {
+            display: flex;
+            justify-content: space-between;
+            margin: 0.3rem;
+            padding: 0.3rem;
+            position: relative;
+
+            &:not(:last-of-type) {
+                border-bottom: 1px solid #ccc;
+            }
+
+            #dollar-sign {
+                position: absolute;
+                right: 13.18rem;
+            }
+
+            input {
+                width: 60%;
+                border: none;
+                border-bottom: 1px solid black;
+                padding-left: 0.7rem;
+                
+                &:active, &:focus {
+                    outline: none;
+                }
+            }
+
+            select {
+                width: 60%;
+                border: 1px solid black;
+                padding: 0.2rem;
+            }
+
+            #weekly-profit, #total-return {
+                border-bottom: 1px solid black;
+                width: 60%;
+                background-color: rgb(228, 226, 226);
+            }
+        }
+     }
+     
+}
+
+.our-services {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(249, 252, 255);
+
+    h3 {
+        font-size: 1.8rem;
+    }
+
+    .subtitle {
+        font-weight: 400;
+        border-bottom: 1px solid black;
+        padding: 1rem;
+    }
+
+    &>div {
+        padding: 1rem;
+
+        h4 {
+            padding: 0.5rem;
+            text-transform: capitalize;
+            font-weight: 700;
+            font-size: 1.4em;
+        }
+
+        p {
+            font-size: 0.9rem;
+            padding: 0.6rem;
+            padding-bottom: 2rem;
+        }
+
+        a {
+            border: 0.2rem solid rgb(75, 154, 243);
+            padding: 0.6rem;
+            color: rgb(92, 140, 196);
+
+            &:hover {
+                background-color: rgb(16, 90, 173);
+                color: whitesmoke;
+                transition: 0.4s;
+            }
+        }
+    }
+}
+
+.experience {
+    text-align: center;
+    padding: 1rem;
+
+    h3 {
+        font-size: 1.6rem;
+    }
+
+    h5 {
+        font-weight: 600;
+        padding: 1rem;
+    }
+    
+    i { 
+        font-size: 2rem;
+    }
+
+    &>div{
+        padding: 0.7rem;
+
+        .num {
+            font-size: 1.1rem;
+            font-weight: 600
+        }
+
+        .small-text {
+            font-size: 0.8rem;
+        }
+    }
+}
+
+.growth {
+    background-color: rgb(249, 252, 255);
+    padding: $default-padding;
+
+    h3 {
+        font-weight: 500;
+        padding: $small-padding;
+    }
+
+    h4 {
+        font-size: 1.6rem;
+        padding: $small-padding;
+    }
+
+    p {
+        padding: $small-padding;
+        margin-bottom: 0.4rem;
+    }
+
+    button {
+        margin: $small-padding;
+        background-color: $btn-blue;
+
+        &:hover {
+            background-color: lighten($color: $btn-blue, $amount: 20%);
+            transition: 0.4s;
+        }
+    }
+}
+
+
+.integrity {
+    background-color: blue;
+    background: url(../images/integrity.jpg) no-repeat;
+    background-size: 50rem;
+    color: whitesmoke;
+    position: relative;
+    z-index: 10;
+
+    a {
+        color: lighten($btn-blue, 35%);
+        padding: $small-padding;
+        transition: 0.4s;
+    
+        &:hover {
+            color: $btn-blue;
+        }
+    }
+
+}
+
+.contact {
+    p {
+        padding: 0;
+        padding-left: $default-padding;
+    }
+
+    a {
+        padding: 0;
+        color: $btn-blue;
+        transition: 0.4s;
+    
+        &:hover {
+            color: darken($color: $btn-blue, $amount: 25%);
+        }
+    }
+}
+
+.testimonies {
+    padding: 2rem;
+    background-color: lighten($color: $btn-blue, $amount: 50%);
+
+    fieldset {
+        padding: $default-padding;
+        border: none;
+        background-color: lighten($btn-blue, 18%);
+        color: whitesmoke;
+        font-style: italic;
+
+        legend {
+            background-color: lighten($color: $btn-blue, $amount: 5%);
+            padding: $default-padding;
+        }
+
+        .user {
+            display: flex;
+            padding: 0.4rem;
+            margin-top: 0.9rem;
+
+            img {
+                height: 3.5rem;
+                width: 3.5rem;
+                border-radius: 50%;
+            }
+
+            p {
+                padding: 1.8rem 0 0 $small-padding;
+                font-size: 1.2rem;
+            }
+        }
+    }
+}

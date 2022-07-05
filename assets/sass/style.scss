@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;1,600;1,700&display=swap');
+
+$default-padding:1rem;
+$small-padding: 0.2rem;
+$btn-blue: #124ec7;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    padding: $default-padding;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.left-container {
+    text-align: left;
+    background-color: rgb(224, 235, 247);
+}
+
+.section {
+    padding: $default-padding;
+}
+
+.topic-center {
+    padding: $default-padding;
+    font-size: 1.7rem;
+}
+
+.sub-topic-center {
+    padding: $default-padding;
+    font-size: 1.2rem;
+}
+
+.topic {
+    font-weight: 500;
+    padding: $small-padding;
+}
+
+.sub-topic {
+    font-size: 1.6rem;
+    padding: $small-padding;
+}
+
+.paragraph {
+    padding: $small-padding;
+    margin-bottom: 0.4rem;
+}
+
+// Files
+@import "header.scss";
+@import "buttons.scss";
+@import "sections.scss";
+@import "contact.scss";
+@import "about.scss";
+@import "faq.scss";
+@import "footer.scss";
